@@ -31,6 +31,9 @@ git clone https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shop
 
 In case you want to use wget or curl instead of git:
 ```bash
+cd /tmp
+```
+```bash
 wget -O - https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shopware/tarball/master | tar xz
 ```
 ```bash
