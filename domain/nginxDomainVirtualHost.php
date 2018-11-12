@@ -139,13 +139,13 @@ server {
     <?php endif ?>
 
     location ~ \.php(/.*)?$ {
-        <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex)): ?>
+        <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex) && !$VAR->domain->physicalHosting->proxySettings['nginxProxyMode']): ?>
         <?php echo $VAR->includeTemplate('domain/service/shopwarefpm.php', $OPT) ?>
         <? else: ?>
         <?php echo $VAR->includeTemplate('domain/service/fpm.php', $OPT) ?>
         <?php endif ?>
     }
-    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex)): ?>
+    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex) && !$VAR->domain->physicalHosting->proxySettings['nginxProxyMode']): ?>
 
     location = /favicon.ico {
         log_not_found off;
@@ -216,7 +216,7 @@ server {
     <?php endif ?>
 
     <?php if ($VAR->domain->physicalHosting->directoryIndex): ?>
-    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex)): ?>
+    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex) && !$VAR->domain->physicalHosting->proxySettings['nginxProxyMode']): ?>
     location / {
         location ~* "^/themes/Frontend/(?:.+)/frontend/_public/(?:.+)\.(?:ttf|eot|svg|woff|woff2)$" {
             expires max;
@@ -266,7 +266,7 @@ server {
     }
     <?php endif ?>
     <?php endif ?>
-    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex)): ?>
+    <?php if (in_array('shopware.php', $VAR->domain->physicalHosting->directoryIndex) && !$VAR->domain->physicalHosting->proxySettings['nginxProxyMode']): ?>
 
     ## XML Sitemap support.
         location = /sitemap.xml {
