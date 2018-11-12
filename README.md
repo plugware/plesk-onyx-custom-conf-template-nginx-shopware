@@ -1,5 +1,7 @@
 # plesk-onyx-custom-conf-template-nginx-shopware
 
+This is a plesk onyx nginx conf template adaption of bcremer nginx configuration setup.
+
 ## Reference: NGINX Shopware configuration by bcremer
 [https://github.com/bcremer/shopware-with-nginx](https://github.com/bcremer/shopware-with-nginx)
 
