@@ -23,8 +23,8 @@ Templates placed in /usr/local/psa/admin/conf/templates/custom/ overrides templa
 
 ## Plesk panel - activate custom template
 
-The custom template is triggered by ***Index Files*** configuration under **Apache & nginx Settings**.
-Just add ***shopware.php*** to activate custom template blocks.
+The custom template is triggered by ***Index Files*** and ***Proxy mode*** configuration under **Apache & nginx Settings**.
+Just add ***shopware.php*** and uncheck ***Proxy mode*** to activate custom template blocks.
 
 ![Index Files config](plesk-panel-screenshot-01.png?raw=true)
 ![Index Files config](plesk-panel-screenshot-02.png?raw=true)
