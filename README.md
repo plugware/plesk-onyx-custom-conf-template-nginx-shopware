@@ -1,5 +1,13 @@
 # plesk-onyx-custom-conf-template-nginx-shopware
 
+## Reference: NGINX Shopware configuration by bcremer
+[https://github.com/bcremer/shopware-with-nginx](https://github.com/bcremer/shopware-with-nginx)
+
+## Customization
+- Added WebP Support - static files
+- Added woff2 Support - cache
+- Refactor nginx location configuration to match custom theme fonts - regex 
+
 ## How to use
 ```bash
 cd /usr/local/psa/admin/conf/templates/
@@ -11,7 +19,7 @@ cd ./custom
 git clone https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shopware.git ./
 ```
 
-Templates placed in custom overrides the default templates.
+Templates placed in /usr/local/psa/admin/conf/templates/custom/ overrides templates in /usr/local/psa/admin/conf/templates/default/.
 
 ## Plesk panel - activate custom template
 
