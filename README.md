@@ -10,6 +10,10 @@ This is a plesk onyx nginx conf template adaption of bcremer nginx configuration
 - Added woff2 Support - cache
 - Refactor nginx location configuration to match custom theme fonts - regex 
 
+## Tested on
+- Plesk Onyx 17.8.11
+- Ubuntu 18.04 LTS
+
 ## How to use
 
 First of all: **YOU NEED ROOT ACCESS**  
