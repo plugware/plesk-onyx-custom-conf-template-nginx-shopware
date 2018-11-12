@@ -9,6 +9,10 @@
 - Refactor nginx location configuration to match custom theme fonts - regex 
 
 ## How to use
+
+First of all: **YOU NEED ROOT ACCESS**  
+If you have for example a managed VPS or a Managed Server without root access you need to contact your hoster support for help.
+
 ```bash
 cd /usr/local/psa/admin/conf/templates/
 mkdir custom
