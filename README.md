@@ -29,6 +29,18 @@ cd ./custom
 git clone https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shopware.git ./
 ```
 
+In case you want to use wget or curl instead of git:
+```bash
+wget -O - https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shopware/tarball/master | tar xz
+```
+```bash
+curl -L https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shopware/tarball/master | tar xz
+```
+```bash
+cd plugware-plesk-onyx-custom-conf-template-nginx-shopware-*
+cp -r ./domain /usr/local/psa/admin/conf/templates/custom/
+```
+
 Templates placed in /usr/local/psa/admin/conf/templates/custom/ overrides templates in /usr/local/psa/admin/conf/templates/default/.
 
 Of course the additional nginx directives can still be used.
