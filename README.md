@@ -27,6 +27,8 @@ git clone https://github.com/plugware/plesk-onyx-custom-conf-template-nginx-shop
 
 Templates placed in /usr/local/psa/admin/conf/templates/custom/ overrides templates in /usr/local/psa/admin/conf/templates/default/.
 
+Of course the additional nginx directives can still be used.
+
 ## Plesk panel - activate custom template
 
 The custom template is triggered by ***Index Files*** and ***Proxy mode*** configuration under **Apache & nginx Settings**.
