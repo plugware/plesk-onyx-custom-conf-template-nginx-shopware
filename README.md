@@ -1,1 +1,1 @@
-# plesk-onyx-custom-conf-template-nginx-shopware-
+# plesk-onyx-custom-conf-template-nginx-shopware
